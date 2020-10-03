@@ -14,16 +14,19 @@
             line-height: 50px; /* align text vertically (this works only for a single line of text) */
             text-align: center;
         }
-        .cr {
+        div:nth-child(even) {
+    background-color: #0033cc;
+        }
+
+        div:nth-child(odd) {
             background-color: #ff3333;
         }
-        .cb {
-            background-color: #0033cc;
-        }
-        .s7 {
+
+        div:nth-child(-n+3) {
             font-size: 0.7em;
         }
-        .s13 {
+
+        div:nth-child(n+8) {
             font-size: 1.3em;
         }
         #lucky7 {
@@ -32,15 +35,15 @@
     </style>
 </head>
 <body>
-<div class="cr s7">1</div>
-<div class="cb s7">2</div>
-<div class="cr s7">3</div>
-<div class="cb">4</div>
-<div class="cr">5</div>
-<div class="cb">6</div>
-<div class="cr" id="lucky7">7</div>
-<div class="cb s13">8</div>
-<div class="cr s13">9</div>
-<div class="cb s13">10</div>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div id="lucky7">7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
 </body>
 </html>
